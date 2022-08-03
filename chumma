@@ -1,0 +1,101 @@
+#include <iostream>
+using namespace std;
+
+
+class initial{
+    public:
+        int dex;
+        int hp;
+        int def;
+        int spa;
+        int spd;
+        int spe;
+        
+    initial(){
+            
+        int dex = 0;
+        int hp = 0;
+        int def = 0;
+        int spa = 0;
+        int spd = 0;
+        int spe = 0;
+        
+    }
+};
+
+//pokemon class
+class pokemon : public initial : fire : water{
+    public:
+        string name;
+        pokemon(){
+            name;
+        }
+        
+        int num = 8;
+    
+};
+
+
+//types start here
+
+    class fire
+    {   
+        public:
+            int ember = 30;
+ 
+            int fireblast[2]={60,4};
+
+       
+             int flamethrower[2] = {100,5};
+ 
+    };
+    class water
+    {
+        public:
+        void bubble()
+        {
+            int base= 30;
+        }
+        void bubblebeam()
+        {
+            int base = 60;
+            int effect = 5;
+        }
+        void butterbeam()
+        {
+            int base = 335;
+            int effect = 5;
+        }
+    };
+
+
+//types end here
+
+//display stats
+
+void display(pokemon a, pokemon b){
+    cout<<a.name<<" is selected"<<"\n";
+    cout<<"displaying "<<a.name+"'s"<<" stats "<<"\n";
+    cout<<"hp : "<<a.hp<<"\n";
+    cout<<"spe :"<<a.spe<<"\n";
+    
+}
+
+int main()
+{
+    pokemon  charizard;
+    charizard.hp =500;
+    charizard.def = 300;
+    charizard.spa = 200;
+    charizard.spd = 800;
+    charizard.spe = 100;
+    charizard.name = "charizard";
+    cout<<charizard.flamethrower[0];
+    
+    
+
+    display(charizard);
+    
+
+}
+
