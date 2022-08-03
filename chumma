@@ -24,7 +24,7 @@ class initial{
 };
 
 //pokemon class
-class pokemon : public initial : fire : water{
+class pokemon : public initial , public fire , public water{
     public:
         string name;
         pokemon(){
@@ -73,7 +73,7 @@ class pokemon : public initial : fire : water{
 
 //display stats
 
-void display(pokemon a, pokemon b){
+void display(pokemon a){
     cout<<a.name<<" is selected"<<"\n";
     cout<<"displaying "<<a.name+"'s"<<" stats "<<"\n";
     cout<<"hp : "<<a.hp<<"\n";
@@ -98,4 +98,3 @@ int main()
     
 
 }
-
